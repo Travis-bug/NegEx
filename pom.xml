@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.travisbug</groupId>
+    <groupId>io.github.travis-bug</groupId>
     <artifactId>negex</artifactId>
     <version>1.1.0</version>
 
     <name>NegEx</name>
-    <url>https://github.com/Travis-bug/negex</url>
+    <url>https://github.com/Travis-bug/NegEx</url>
     <description>Python inspired negative indexing utility for java arrays and lists </description>
     <packaging>jar</packaging>
 
@@ -20,6 +20,15 @@
         </license>
     </licenses>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.fusesource.jansi</groupId>
+            <artifactId>jansi</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+    </dependencies>
+
+
     <developers>
         <developer>
             <name>Travis Eweka</name>
@@ -28,16 +37,16 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/Travis-bug/negex.git</connection>
-        <developerConnection>scm:git:ssh://github.com:Travis-bug/negex.git</developerConnection>
-        <url>https://github.com/Travis-bug/negex</url>
+        <connection>scm:git:git://github.com/Travis-bug/NegEx.git</connection>
+        <developerConnection>scm:git:ssh://github.com:Travis-bug/NegEx.git</developerConnection>
+        <url>https://github.com/Travis-bug/NegEx</url>
     </scm>
 
 
 
 <properties>
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
