@@ -99,7 +99,7 @@ Negative indices are converted internally using the following formula:
 
 ## Out-of-Bounds Handling
 
-NegEx throws an exception when an invalid index is used. This helps developers correct indexing mistakes quickly by providing specific suggestions.
+NegEx throws an exception when an invalid index is used. This helps developers correct indexing mistakes quickly by providing close specific suggestions.
 
 **Example message:**
 `Index -10 is 4 past the valid negative range.`
