@@ -4,6 +4,7 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
+.idea/
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -33,6 +34,17 @@ build/
 !**/src/test/**/build/
 negex/run.java
 
+
+# --- SECRETS (Never commit these!) ---
+# Ignore the local properties file where your tokens and GPG pass reside
+gradle.properties
+# Ignore any exported GPG key files
+**/*.gpg
+*.asc
+
+# --- GRADLE & BUILD ---
+.gradle/
+bin/
 ### VS Code ###
 .vscode/
 

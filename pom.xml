@@ -6,7 +6,7 @@
 
     <groupId>io.github.travis-bug</groupId>
     <artifactId>negex</artifactId>
-    <version>1.1.0</version>
+    <version>1.0.1</version>
 
     <name>NegEx</name>
     <url>https://github.com/Travis-bug/NegEx</url>
