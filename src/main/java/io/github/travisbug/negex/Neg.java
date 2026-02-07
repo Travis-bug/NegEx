@@ -16,7 +16,6 @@ public final class Neg {
     }
 
 
-
     //NEGATIVE INDEXING FOR ARRAYS
     public static <T> T at (T[] array, String arrayName, int index) {
         if (array==null) throw new IllegalArgumentException("array cannot be null " + arrayName );
@@ -26,35 +25,35 @@ public final class Neg {
 
     //ADDED OVERLOADS TO HANDLE Array PRIMITIVE TYPES
 
-    public static int at (int[] array, String arrayName, int index) {
+    public static int at (int [] array, String arrayName, int index) {
         if (array==null) throw new IllegalArgumentException("array cannot be null " + arrayName );
         int realIndex = IndexHelper.getRealIndex(array.length, arrayName, index);
         return array[realIndex];
     }
 
 
-    public static boolean at (boolean[] array, String arrayName, int index) {
+    public static boolean at (boolean [] array, String arrayName, int index) {
         if (array==null) throw new IllegalArgumentException("array cannot be null " + arrayName );
         int realIndex = IndexHelper.getRealIndex(array.length,arrayName, index);
         return array[realIndex];
     }
 
 
-    public static byte at (byte[] array, String arrayName, int index) {
+    public static byte at (byte [] array, String arrayName, int index) {
         if (array==null) throw new IllegalArgumentException("array cannot be null " + arrayName );
         int realIndex = IndexHelper.getRealIndex(array.length, arrayName, index);
         return array[realIndex];
     }
 
 
-    public static long at (long[] array, String arrayName, int index) {
+    public static long at (long [] array, String arrayName, int index) {
         if (array==null) throw new IllegalArgumentException("array cannot be null " + arrayName );
         int realIndex = IndexHelper.getRealIndex(array.length, arrayName, index);
         return array[realIndex];
     }
 
 
-    public static char at (char[] array, String arrayName, int index) {
+    public static char at (char [] array, String arrayName, int index) {
         if (array==null) throw new IllegalArgumentException("array cannot be null " + arrayName );
         int realIndex = IndexHelper.getRealIndex(array.length, arrayName, index);
         return array[realIndex];
@@ -92,15 +91,6 @@ public final class Neg {
 
         return list.get(realIndex);
     }
-
-
-
-
-
-
-
-
-
 
 
 

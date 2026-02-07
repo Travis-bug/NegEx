@@ -22,7 +22,7 @@ final class IndexHelper {
             throw new IllegalStateException( errorMessage) ;
         }
 
-        if (realIndex<0) {
+        if (realIndex<0) { //negative out of bounds
             String errorMessage = ansi()
                     .fg (Ansi.Color.RED).bold().a("ERROR " )
                     .fg (Ansi.Color.YELLOW).a("The index " )
@@ -32,14 +32,14 @@ final class IndexHelper {
                     .fg (Ansi.Color.YELLOW).a("the array has a total of " )
                     .fg (Ansi.Color.BLUE).a(length)
                     .fg (Ansi.Color.YELLOW).a(" elements, did you mean " )
-                    .fg (Ansi.Color.BLUE).bold().a(index + 1)
+                    .fg (Ansi.Color.BLUE).bold().a(-length)
                     .fg (Ansi.Color.YELLOW).a("?")
                     .reset()
                     .toString();
-            throw new IndexOutOfBoundsException( errorMessage) ;
+             throw new IndexOutOfBoundsException( errorMessage) ;
         }
 
-        if (realIndex==length) {
+        if (realIndex==length) { //positive out of bounds
             String errorMessage = ansi()
                     .fg (Ansi.Color.RED).bold().a("ERROR " )
                     .fg (Ansi.Color.YELLOW).a("The index of " )
