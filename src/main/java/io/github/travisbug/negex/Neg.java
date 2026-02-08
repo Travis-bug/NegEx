@@ -1,7 +1,6 @@
 package io.github.travisbug.negex;
-import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
-import static org.fusesource.jansi.Ansi.*;
+
 
 import java.util.List;
 
